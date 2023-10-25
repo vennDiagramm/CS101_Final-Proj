@@ -26,7 +26,7 @@ int main() {
 
     // Greets the user
     std::cout << "Hello there! Thank you for choosing our DiscCalc. We appreciate your business!\nNow, let's calculate the discount for you." << std::endl;
-    std::cout << "///////////////////////////////////////////////////////" << std::endl;
+    std::cout << "-------------------------------------------------------" << std::endl;
 
     // This will detect if the user typed the wrong format.
     while (!valid) {
@@ -63,7 +63,6 @@ int main() {
     }
 
 
-    
     /* MATH || MATH || MATH || MATH || MATH || MATH || MATH || MATH || MATH */
     
     // Call the function
@@ -71,19 +70,20 @@ int main() {
     SavedMoney = moneySave(Total, Discount);
 
     // Display the discounted price || Money saved || Price comparison
-    std::cout << std::fixed << std::setprecision(2) << "///////////////////////////////////////////////////////" << std::endl;
-      std::cout << "The total price with the discount is: " << DiscountedAmount << " Pesos." << std::endl; // Add a new line here
-    std::cout << "You saved about " << SavedMoney << " Pesos from the original price of: " << Total << std::endl;
+    std::cout << "-------------------------------------------------------" << std::endl;
+    std::cout <<std::fixed << std::setprecision(2) << "The total price with the discount is: "       << DiscountedAmount << " Pesos." << std::endl; 
+    std::cout << "You saved about " << SavedMoney << " Pesos from the original price of: " <<        Total << std::endl;
 
+
+
+    /* RETRY || RETRY || RETRY || RETRY || RETRY || RETRY || RETRY */
+    
     // To continue the calculation or terminate.
-    std::cout << "\nDo you want to perform another calculation? (Y/N)" << std::endl;
+    std::cout << "-------------------------------------------------------" <<
+      "\nDo you want to perform another calculation? (Y/N)" << std::endl;
     // Declare a string for the inputted choice
     std::string choice;
     std::cin >> choice;
-
-
-    
-    /* RETRY || RETRY || RETRY || RETRY || RETRY || RETRY || RETRY */
     
     // Checking if the inputted choice is Y or N or neither
     if (choice == "Y" || choice == "y") {
@@ -99,4 +99,3 @@ int main() {
   }
   return 0;
 }
-// End of Program
