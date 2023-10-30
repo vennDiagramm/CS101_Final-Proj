@@ -25,7 +25,8 @@ int main() {
     bool valid = false;
 
     // Greets the user
-    std::cout << "Hello there! Thank you for choosing our DiscCalc. We appreciate your business!\nNow, let's calculate the discount for you." << std::endl;
+    std::cout << "Hello there! Thank you for choosing our DiscCalc. We appreciate your business!\n" 
+      << "Now, let's calculate the discount for you." << std::endl;
     std::cout << "-------------------------------------------------------" << std::endl;
 
     // This will detect if the user typed the wrong format.
