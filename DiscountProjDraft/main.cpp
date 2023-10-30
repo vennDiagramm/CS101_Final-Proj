@@ -72,7 +72,8 @@ int main() {
 
     // Display the discounted price || Money saved || Price comparison
     std::cout << "-------------------------------------------------------" << std::endl;
-    std::cout <<std::fixed << std::setprecision(2) << "The total price with the discount is: " << DiscountedAmount << " Pesos." << std::endl; 
+    std::cout <<std::fixed << std::setprecision(2) << "The total price with the discount is: " << DiscountedAmount 
+      << " Pesos." << std::endl; 
     std::cout << "You saved about " << SavedMoney << " Pesos from the original price of: " << Total << std::endl;
 
 
